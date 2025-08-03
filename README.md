@@ -1,44 +1,52 @@
-📁 Project Structure
-├── Index.html      # Main HTML file
-├── style.css       # CSS styling for the portfolio
-├── CHARIS CV.pdf   # (Linked in About section for download)
-└── background-classroom.jpg # (Referenced in CSS background)
+# 🌐 Charis Nikao – Personal Portfolio
 
-🚀 Features
-Responsive single-page layout with smooth navigation
+Welcome to my personal portfolio website! This project showcases who I am, what I’m passionate about, and where I’m headed in my journey as a tech enthusiast and aspiring web developer.
 
-Interactive rotating transitions between sections
+## ✨ Overview
 
-Highlight of personal traits, educational background, and interests
+This responsive single-page portfolio highlights:
 
-Contact information and downloadable CV
+- A personal introduction and mission
+- Interests in software development and innovation
+- Educational background and career aspirations
+- Contact information
+- A downloadable CV
 
-📌 Sections
-Home: Introduction to Charis and core values (innovative, curious, always learning)
+## 📁 Project Files
 
-About Me: Personal background, interests, educational journey, and upcoming projects
+├── Index.html # Main HTML page (home, about, contact)
+├── style.css # Styling for layout, animations, and responsiveness
+├── CHARIS CV.pdf # Downloadable resume (linked on the site)
+└── background-classroom.jpg # Background image (used in CSS)
 
-Contacts: Email, phone, and mailing address
 
-🛠 Technologies Used
-HTML5
+## 🧠 Features
 
-CSS3 (with transitions and animations)
+- Smooth page transitions using vanilla JavaScript
+- Rotating effects between sections
+- Clean, minimalist layout
+- Emphasis on personal brand and future projects
+- Fully responsive on mobile and desktop devices
 
-JavaScript (for navigation interaction)
+## 🛠️ Technologies Used
 
-📎 How to Use
-Download or clone this repository.
+- **HTML5** – Semantic layout and structure
+- **CSS3** – Styling, transitions, and responsive design
+- **JavaScript** – Interactive navigation and transitions
 
-Open Index.html in a web browser.
+## 📸 Preview
 
-Explore the different sections using the top navigation bar.
+> _“A professional space to highlight my academic journey, technical skills, and passion for technology.”
 
-📬 Contact
-Email: nikaocharis@gmail.com
+## 🚀 Getting Started
 
-Phone: +254 717703363
+To run the website locally:
 
-Location: Nairobi, Kenya
+1. Clone or download the repository.
+2. Open `Index.html` in any modern web browser.
 
+```bash
+git clone https://github.com/yourusername/charis-portfolio.git
+cd charis-portfolio
+start Index.html
 
