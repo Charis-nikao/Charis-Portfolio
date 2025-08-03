@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <nav>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About Me</a>
+                    <a href="#contacts" class="nav-link">Contacts</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content Wrapper -->
+        <main class="content-wrapper">
+            <!-- Home Section -->
+            <section id="home" class="page active">
+                <div class="hero">
+                    <h1>Charis Nikao</h1>
+                    <p>|Tech Enthusiast|</p>
+                    <p>Hi I'm Charis Nikao,<br> An aspiring web developer with a strong interest in software development & emerging technologies.<br>
+                       This website serves as a professional space to highlight my academic journey and technical skills.<br>
+                       I invite you to explore and learn more about my passion for technology and innovation.<br></p>
+                    <div class="features">
+                        <div class="feature-item">
+                            <span class="feature-icon">💡</span> Innovative
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🔍</span>Curious
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📚</span>Always learning
+                        </div>
+                    </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="page">
+                <div class="benefits">
+                    <h2>👋About Me</h2>
+                    <p>Hi! I’m a passionate and curious student currently pursuing my computer science degree.
+                        I have a keen interest in software development, web technologies, and problem-solving.
+                        I enjoy building projects that not only challenge me technically but also have real-world impact.
+                        I actively explore new tools, contribute to open-source projects, and continuously grow my skills in the technical field.
+                        My goal is to create technology that’s both functional and user-friendly, while learning as much as I can along the way.</p>
+                    <h2>💡💻Interests</h2>
+                     <p>Outside of academics, I enjoy exploring design,tech meetups and summits, reading, gaming and football.
+                        I believe that great software combines logic with creativity, and that’s exactly the kind of balance I strive for in everything I build.</p>
+                    <h2>🎓Educational Background</h2>
+                    <p>For more Information see attached CV</p>
+                    <a href="CHARIS CV.pdf" download class="btn">📄 Download My CV</a>
+                    <h2>🚀 Projects</h2>
+                    <p>Stay tuned — exciting projects will be added here soon!</p>
+                </div>
+            </section>
+
+            <!-- Contacts Section -->
+            <section id="contacts" class="page">
+                <div class="benefits">
+                    <h2>Contacts</h2>
+                    <p>For support or inquiries, reach out to:</p>
+                    <ul>
+                        <li><strong>Email:</strong>nikaocharis@gmail.com</li>
+                        <li><strong>Phone:</strong> +254 717703363</li>
+                        <li><strong>Address:</strong> P.O. Box 12345-00100, Nairobi, Kenya</li>
+                    </ul>
+                </div>
+            
+        </main>
+    <script>
+        // Navigation link handling for revolving effect
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetPage = document.getElementById(targetId);
+                const activePage = document.querySelector('.page.active');
+                const activeLink = document.querySelector('.nav-link.active');
+
+                if (targetPage !== activePage) {
+                    // Remove active class from current page and link
+                    activePage.classList.remove('active');
+                    activeLink.classList.remove('active');
+
+                    // Add active class to new page and link
+                    targetPage.classList.add('active');
+                    this.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
